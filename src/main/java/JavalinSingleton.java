@@ -18,6 +18,7 @@ public class JavalinSingleton {
         Javalin app = Javalin.create();
         
         //write endpoint here
+        app.get("localhost:9000/hello", ctx -> {});
 
         return app;
     }
